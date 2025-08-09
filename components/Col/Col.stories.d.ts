@@ -1,0 +1,11 @@
+import { Meta, StoryObj } from '@storybook/react-vite';
+import { Col } from './Col';
+declare const meta: Meta<typeof Col>;
+export default meta;
+type Story = StoryObj<typeof Col>;
+export declare const Basic: Story;
+export declare const Responsive: Story;
+export declare const DesktopOnly: Story;
+export declare const MobileOnly: Story;
+export declare const DifferentSizes: Story;
+export declare const IgnoreGaps: Story;

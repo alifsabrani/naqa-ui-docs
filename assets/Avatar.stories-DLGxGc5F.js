@@ -1,0 +1,5 @@
+import{j as r}from"./iframe-zY3F8_PV.js";import{I as s}from"./Image-CT8d3Esg.js";import"./preload-helper-D9Z9MdNV.js";import"./index-BheH0D4G.js";import"./Loader-DHkOBg6w.js";const o="_avatar_1n119_1",n={avatar:o},t=({src:e})=>r.jsx("div",{className:n.avatar,children:r.jsx(s,{src:e,alt:"",fit:"cover",loadingAnimationVariant:"skeleton"})});t.__docgenInfo={description:'Avatar component to display a user\'s profile picture.\r\n@example\r\n```tsx\r\n<Avatar src="https://example.com/avatar.jpg" />\r\n```',methods:[],displayName:"Avatar",props:{src:{required:!0,tsType:{name:"string"},description:"The source URL of the avatar image"}}};const l={component:t,title:"Components/Avatar",tags:["autodocs"]},a={args:{src:"https://placehold.co/600x400"}};a.parameters={...a.parameters,docs:{...a.parameters?.docs,source:{originalSource:`{
+  args: {
+    src: 'https://placehold.co/600x400'
+  }
+}`,...a.parameters?.docs?.source}}};const v=["Primary"];export{a as Primary,v as __namedExportsOrder,l as default};
