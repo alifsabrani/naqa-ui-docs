@@ -1,0 +1,15 @@
+import { Meta, StoryObj } from '@storybook/react-vite';
+import { Animate } from './Animate';
+declare const meta: Meta<typeof Animate>;
+export default meta;
+type Story = StoryObj<typeof Animate>;
+export declare const FadeInCol: Story;
+export declare const SlideInLeft: Story;
+export declare const LoopingBounce: Story;
+export declare const ZoomInDelayed: Story;
+export declare const RotateIn: Story;
+export declare const CustomSpring: Story;
+export declare const SlideInCol: Story;
+export declare const ManualStart: Story;
+export declare const RepeatTwice: Story;
+export declare const PulseFast: Story;

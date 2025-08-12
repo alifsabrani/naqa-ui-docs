@@ -23,13 +23,13 @@ export type TextAlign = 'left' | 'center' | 'right' | 'justify';
  * Props for the Typography component, allowing for a dynamic 'as' prop.
  * @template T - The type of the component being rendered, which can be an HTML element tag string or a React component type.
  */
-export type TypographyProps<T extends React.ElementType> = {
+export type TypographyProps = {
     /** The predefined typography style to apply. This also determines the default semantic HTML tag. */
     variant: TypographyVariant;
     /** The content to be rendered inside the component. */
     children: React.ReactNode;
     /** An optional prop to override the default HTML tag. For example, to use an h3 tag for an h1-sized heading. */
-    as?: T;
+    as?: keyof React.JSX.IntrinsicElements;
     /** An optional CSS class name to be merged with the component's default class name. */
     className?: string;
     /** An optional prop to override the default font weight. */
@@ -43,7 +43,7 @@ export type TypographyProps<T extends React.ElementType> = {
      * Supports common CSS `text-align` values such as `"left"`, `"center"`, `"right"`, and `"justify"`.
      */
     align?: TextAlign;
-} & React.ComponentPropsWithoutRef<T>;
+} & React.HTMLAttributes<HTMLElement>;
 /**
  * A reusable Typography component that enforces consistent text styling.
  * This component is a generic function that correctly infers the props of the `as` element.
@@ -52,4 +52,4 @@ export type TypographyProps<T extends React.ElementType> = {
  * <Typography variant="display" color="primary">Alif Sabrani</Typography>
  * ```
  */
-export declare const Typography: <T extends React.ElementType = "span">({ variant, children, as, className, fontWeight, color, fontType, align, ...rest }: TypographyProps<T>) => React.JSX.Element;
+export declare const Typography: React.FC<TypographyProps>;

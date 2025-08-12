@@ -10,4 +10,5 @@ export * from './components/Carousel';
 export * from './components/Typography';
 export * from './components/Paper';
 export * from './components/Avatar';
+export * from './components/Animate';
 export * from './styles/theme';

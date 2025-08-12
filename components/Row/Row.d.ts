@@ -16,7 +16,7 @@ export type RowProps = {
     noGap?: boolean;
     /** Children inside the row */
     children: React.ReactNode;
-};
+} & React.HTMLAttributes<HTMLDivElement>;
 /**
  * `Row` is a flexible layout component used to arrange `Col` components horizontally.
  * It supports responsive behavior, alignment, and layout options for both mobile and desktop.

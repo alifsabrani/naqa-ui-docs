@@ -21,7 +21,7 @@ export type ContainerProps = {
     mobileOnly?: boolean;
     /** Whether the container should take up the full screen */
     fullscreen?: boolean;
-};
+} & React.HTMLAttributes<HTMLDivElement>;
 /**
  * A layout wrapper component for organizing content with responsive and layout-based options.
  */
